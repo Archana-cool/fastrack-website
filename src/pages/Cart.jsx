@@ -9,12 +9,12 @@ const Cart = () => {
     const deleteCart=(item) => {
             dispatch(deleteFromCart(item));
         }
-        const incrementCart =(id,quantity) =>{
+        const incrementCart =(_id,quantity) =>{
             dispatch(updateQuantity({id,quantity:quantity +1}))
         }
-        const decrementCart =(id,quantity) =>{
+        const decrementCart =(_id,quantity) =>{
             if(quantity>1){
-                dispatch(updateQuantity({id,quantity:quantity-1}))
+                dispatch(updateQuantity({_id,quantity:quantity-1}))
             }
         }
     

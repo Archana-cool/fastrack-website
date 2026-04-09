@@ -30,8 +30,8 @@ const CartSlice=createSlice({
             localStorage.setItem("cartItems",JSON.stringify(state.cartItems));
         },
         updateQuantity:(state,action)=>{
-            const {id,quantity}=action.payload;
-            const itemToUpdate =state.cartItems.find(Item=>Item._id===_id);
+            const {_id,quantity}=action.payload;
+            const itemToUpdate =state.cartItems.find(Item=>Item._id===id);
             if(itemToUpdate)
             {
                 itemToUpdate.quantity = quantity;

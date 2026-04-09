@@ -19,7 +19,7 @@ const Smartwatch = () => {
   }
   const[Smartwatch,setsmartwatch]=useState([])
   useEffect(()=>{
-    fetch(`http://localhost:5500/watch`)
+    fetch(`https://fastrack-backend-gizv.onrender.com/watch`)
     .then((res)=>res.json())
     .then((data)=>{
       if(Array.isArray(data)){
@@ -27,7 +27,7 @@ const Smartwatch = () => {
       }
     }).catch((err)=>
     console.log(err));
-  });
+  },[]);
   return (
     <>
        <Navbar/>
