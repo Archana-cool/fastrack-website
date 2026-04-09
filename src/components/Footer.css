@@ -1,0 +1,36 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.foot{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: black;
+}
+.fim{
+    height: 110px;
+    width: 260px;
+}
+.ic{
+    color: white;
+    height: 40px;
+    width: 80px;
+}
+.fts{
+    color: white;
+}
+.ftt{
+    color: white;
+}
+.ftf{
+    color: white;
+}
+@media screen and(min-width:480px) and (max-width:600px)
+{
+ .foot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+}
